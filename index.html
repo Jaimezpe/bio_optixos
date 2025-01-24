@@ -1,0 +1,400 @@
+<!--Version 2.0-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale1.0">
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Jaime Ezpeleta &#8212; Software Developer" />
+    <meta property="og:description" content="Portolio" />
+    <meta property="og:url" content="Jaime Ezpeleta" />
+    <meta property="og:site_name" content="Jaime Ezpeleta | Portfolio" />
+    <link rel="shortcut icon" href="OptiXOS_Logo_Redondeado.png">
+    <title>OptiXOS | Inicio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Poetsen+One&family=Quicksand:wght@300..700&display=swap');
+    </style>
+
+    <style>
+        body {
+            background-image: url(fondo.png);
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+            color: white;
+            font-family: 'Geist Mono', Arial, sans-serif;
+        }
+
+        .barra {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 1px;
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            color: white;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            flex-wrap: wrap;
+        }
+
+        .barra-izquierda {
+            display: flex;
+            align-items: center;
+        }
+
+        .barra-izquierda img {
+            height: 40px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+
+
+        main {
+            padding-top: 80px;
+        }
+
+        @media (max-width: 768px) {
+            .barra {
+                height: auto;
+                flex-wrap: wrap;
+                padding: 10px;
+            }
+
+            .barra-derecha {
+                justify-content: flex-start;
+                width: 100%;
+            }
+
+            .barra-derecha a {
+                margin: 5px 10px;
+            }
+        }
+
+
+        .sobremiuno {
+            padding-top: 20px;
+
+        }
+
+        .sobremiunonombre {
+            font-size: 60px;
+            color: #7fffd4;
+        }
+
+
+        .sobremiunosubnombre {
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid;
+            width: fit-content;
+            animation: blink-caret 0.75s step-end infinite;
+            font-size: 30px;
+            margin-top: -50px;
+            margin-bottom: 40px;
+        }
+
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent;
+            }
+
+            50% {
+                border-color: rgb(255, 255, 255);
+            }
+        }
+
+
+
+        .linkx {
+            position: relative;
+            text-decoration: none;
+        }
+
+        .linkx:hover::after {
+            content: "X";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #f0f0f0;
+            padding: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            color: #333;
+        }
+
+
+
+        .linkbluesky {
+            position: relative;
+            text-decoration: none;
+        }
+
+        .linkbluesky:hover::after {
+            content: "Bluesky";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #f0f0f0;
+            padding: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .linkmail {
+            position: relative;
+            text-decoration: none;
+        }
+
+        .linkmail:hover::after {
+            content: "Mail";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #f0f0f0;
+            padding: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .linkgithub {
+            position: relative;
+            text-decoration: none;
+        }
+
+        .linkgithub:hover::after {
+            content: "Github";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #ffffff;
+            padding: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            color: #333;
+        }
+
+
+
+        .sobremidos {
+            max-width: 600px;
+            margin-top: 100px;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+
+        .barra-separacion {
+            width: 80%;
+            max-width: 600px;
+            height: 4px;
+            background-color: #b1b1b1;
+            margin: 20px auto;
+        }
+
+        .contacto {
+
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgb(0, 0, 0);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .contactox {
+            text-decoration: none;
+        }
+
+        .contactox:hover {
+            transform: scale(1.1);
+        }
+
+        .option {
+            display: inline-block;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 20px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .option-text {
+            position: relative;
+            z-index: 1;
+        }
+
+        .ciencia {
+            background-color: #75acdf;
+            height: 20px;
+            width: 80px;
+            font-size: 17px;
+            font-family: 'Geist Mono';
+        }
+
+        .ciencia:hover {
+            background-color: #a2d2ff;
+        }
+
+        .imgejemplo {
+            padding: 12px 12px 0px 0px;
+        }
+
+        .imgejemploimg {
+            margin: 0;
+            padding: 0;
+            height: 300px;
+        }
+    </style>
+
+    <script>
+        const texto = "Custom performance and style";
+        let i = 0;
+        const velocidad = 120;
+
+        function escribirTexto() {
+            if (i < texto.length) {
+                document.getElementById("typewriter").innerHTML += texto.charAt(i);
+                i++;
+                setTimeout(escribirTexto, velocidad);
+            } else {
+                document.getElementById("typewriter").style.borderRight = '';
+            }
+        }
+
+
+
+        window.onload = escribirTexto;
+
+
+    </script>
+
+
+</head>
+
+<body>
+    <center>
+        <div class="barra">
+
+            <a href="https://jaimezpe.com" style="color: white; text-decoration: none;">
+                <div class="barra-izquierda">
+                    <p>‎‎ ‎</p>
+                    <img src="OptiXOS_Logo_Redondeado.png   " draggable="false">
+                    <p class="Nombrebarra">OptiXOS</p>
+                </div>
+            </a>
+
+
+        </div>
+
+
+        <div class="sobremiuno">
+            <p class="sobremiunonombre">OptiXOS</p>
+            <p class="sobremiunosubnombre" id="typewriter"></p>
+            <center>
+                <a href="https://x.com/fixyourpc_" class="linkx"><img src="x_dark.svg" draggable="false"
+                        style="height: 20px;"></a>
+                <a href="https://bsky.app/profile/fixyourpc.bsky.social" class="linkbluesky"><img src="bluesky.svg"
+                        draggable="false" style="height: 20px;"></a>
+                <a href="mailto:contact.fixyourpc@gmail.com" class="linkmail"><img src="gmail.svg" draggable="false"
+                        style="height: 20px;"></a>
+                <a href="https://github.com/jaimezpe" class="linkgithub"><img src="github-dark.svg" draggable="false"
+                        style="height: 20px;"></a>
+            </center>
+        </div>
+        <div class="idsobremi" id="sobremi"></div>
+
+        <a href="https://mega.nz/file/qZQByayR#MBGaLDuhS1uTsHPuThDorj5JUZUj9sV1J5hEPufdp1M" class="option ciencia">
+            <span class="option-text">
+                <font color="black">Download</font>
+            </span>
+        </a>
+
+        <div class="sobremidos">
+            <h1 style="font-family: 'Geist Mono'">What is OptiXOS? </h1>
+            <p>
+                <font color="#ff9c21">OptiXOS</font> is an <font color="#ff9c21">operating system</font> designed to run
+                Windows 11 on desktop and laptop computers with <font color="#ff9c21">low
+                    resources</font>, while maintaining all the <font color="aquamarine">conveniences, customization,
+                    and programs</font> provided by
+                Microsoft. To
+                enjoy the customization and official programs from Microsoft in this modification, it is necessary to
+                <font color="#ff9c21">purchase an official Windows license</font> on their official website
+            </p>
+
+            <p>‎‎ ‎</p>
+
+            <h1 style="font-family: 'Geist Mono'">Instalation</h1>
+            <p>
+                For the <font color="#ff9c21">installation</font> of this modification, you need an <font
+                    color="#ff9c21">external USB device</font> or an <font color="#ff9c21">SD memory card</font> with at
+                least <font color="aquamarine">5GB of storage</font>, and to <font color="#ff9c21">disconnect</font> any
+                <font color="#ff9c21">internet connection</font> methods until the installation is
+                complete
+            </p>
+
+            <p>‎‎ ‎</p>
+
+            <h1 style="font-family: 'Geist Mono'">Screenshot</h1>
+
+            <div class="imgejemplo">
+                <img src="Ejemplo1.png" draggable="false" class="imgejemploimg">
+            </div>
+
+            <h1 style="font-family: 'Geist Mono'">Video</h1>
+
+            <video width="480" height="320" controls controlslist="nodownload nofullscreen  novideo fastseek">>
+                <source src="video.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+              </video>
+
+              <a href="https://www.youtube.com/watch?v=H6SSISxacoo"><p><font color="#ff9c21">Youtube link</font></p></a>
+              <p>‎‎ ‎</p>
+
+
+
+
+        </div>
+
+
+
+        <p>‎‎ ‎</p>
+
+        <div class="contacto" id="contacto">
+            <h1>Contact</h1>
+            <p>You can <font color="#ff9c21">contact us</font> via <a href="https://x.com/jaimezpe_" class="contactox">
+                    <font color="#ff9c21">X,</font>
+                </a>or via <a href="mailto:info@jaimezpe.com" class="contactox">
+                    <font color="#ff9c21">Mail</font>
+                </a></p>
+        </div>
+
+
+        <div class="finaldepagina">
+
+            <div class="barra-separacion"></div>
+            <h4>Developed by: <a href="https://jaimezpe.com" style="color: #ff9c21;">Jaimezpe</a>
+            </h4>
+
+        </div>
+
+
+
+    </center>
+</body>
+
+</html>
