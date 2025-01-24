@@ -1,6 +1,7 @@
 # OptiXOS official's website
 Welcome to the host of OptiXOS website
 https://optixos.jaimezpe.com
+#
 ![OptiXOS_Logo](https://github.com/user-attachments/assets/12c37dde-b7b3-4c17-b68e-df930f2e0efa)
 
 # What's OptiXOS?
